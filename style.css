@@ -1,3 +1,7 @@
+:root {
+  --bg: #ccc;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,8 +12,8 @@ body {
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #6eacf3;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
   position: relative;
@@ -18,14 +22,20 @@ header {
 
 .container {
   flex: 1;
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
+  padding: 1.4rem;
+  background-color: #3f7dc3;
   border: 1px solid #ccc;
   overflow: hidden;
   position: relative;
   z-index: 0;
+}
+
+.content-luas {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
 }
 
 .bagian {
@@ -57,15 +67,16 @@ header {
   padding: 20px;
   box-sizing: border-box;
   overflow-y: auto;
-  max-height: calc(100vh - 180px); /* Adjust the value as needed */
+  max-height: calc(100vh - 0px);
+
   transition: top 0.3s ease-in-out;
-  z-index: 2; /* Add this line */
+  z-index: 2;
 }
 
 .expanded {
   display: block;
   top: 0;
-  z-index: 1; /* Add this line */
+  z-index: 1;
 }
 
 .content.expanded .gambar {

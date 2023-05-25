@@ -46,38 +46,45 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="bagian" id="bagian-keliling">
-      <h2 onclick="toggleContent('content-keliling')" class="unselectable-text">
-        Keliling Persegi
-      </h2>
-      <div
-        class="content"
-        id="content-keliling"
-        style="display: flex; justify-content: center; align-items: center"
-      >
-        <div class="gambar">
-          <img src="img/persegi.png" alt="Gambar Persegi" id="gambar-persegi" />
-        </div>
-        <p class="rumus">
-          Rumus dari keliling persegi yaitu:
-          <br />
-          K = 4 x S
-        </p>
-        <h1>Hitung Keliling Persegi</h1>
-        <div class="input-container">
-          <label for="sisi-keliling">Sisi:</label>
-          <input
-            type="number"
-            id="sisi-keliling"
-            name="sisi-keliling"
-            placeholder="Sisi (S)"
-          />
-          <br />
-          <p class="langkah" id="langkah-keliling"></p>
-          <br />
-          <button onclick="HitungKelilingPersegi()">Hitung</button>
+      <div class="bagian" id="bagian-keliling">
+        <h2
+          onclick="toggleContent('content-keliling')"
+          class="unselectable-text"
+        >
+          Keliling Persegi
+        </h2>
+        <div
+          class="content"
+          id="content-keliling"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <div class="gambar">
+            <img
+              src="img/persegi.png"
+              alt="Gambar Persegi"
+              id="gambar-persegi"
+            />
+          </div>
+          <p class="rumus">
+            Rumus dari keliling persegi yaitu:
+            <br />
+            K = 4 x S
+          </p>
+          <h1>Hitung Keliling Persegi</h1>
+          <div class="input-container">
+            <label for="sisi-keliling">Sisi:</label>
+            <input
+              type="number"
+              id="sisi-keliling"
+              name="sisi-keliling"
+              placeholder="Sisi (S)"
+            />
+            <br />
+            <p class="langkah" id="langkah-keliling"></p>
+            <br />
+            <button onclick="HitungKelilingPersegi()">Hitung</button>
+          </div>
         </div>
       </div>
     </div>
