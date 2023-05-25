@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  flex: 1;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.bagian {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.rumus {
+  font-weight: bold;
+}
+
+.input-container {
+  margin-top: 10px;
+}
+
+.langkah {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: calc(100vh - 180px); /* Adjust the value as needed */
+  transition: top 0.3s ease-in-out;
+  z-index: 2; /* Add this line */
+}
+
+.expanded {
+  display: block;
+  top: 0;
+  z-index: 1; /* Add this line */
+}
+
+.content.expanded .gambar {
+  display: block;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
